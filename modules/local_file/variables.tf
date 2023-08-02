@@ -6,6 +6,7 @@ variable "filename" {
 variable "content" {
   type        = string
   description = "File content"
+  default     = ""
 }
 
 variable "file_permissions" {

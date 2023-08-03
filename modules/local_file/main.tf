@@ -1,0 +1,13 @@
+resource "local_file" "local_file" {
+  count = var.is_sensitive ? 0 : 1
+
+  content  = var.content_base64 == "" ? var.content : base64encode(var.content_base64)
+  filename = var.filename
+}
+
+resource "local_sensitive_file" "local_sensitive_file" {
+  count = var.is_sensitive ? 1 : 0
+
+  content  = var.content_base64 == "" ? var.content : base64encode(var.content_base64)
+  filename = var.filename
+}

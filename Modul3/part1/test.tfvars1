@@ -1,0 +1,7 @@
+files = [
+  { content = "file1", file_permissions = "0755", name = "file1.txt" },
+  { content = "file2", file_permissions = "0755", name = "file2.txt" },
+  { content = "file3", file_permissions = "0755", name = "file3.txt" },
+  { content = "file4", file_permissions = "0755", name = "file4.txt" },
+  { content = "file5", file_permissions = "0755", name = "file5.txt" }
+]

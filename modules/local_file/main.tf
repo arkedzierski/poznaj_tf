@@ -11,7 +11,7 @@ resource "local_file" "file" {
 }
 
 moved {
-  from = local_file.local_sensitive_file
+  from = local_sensitive_file.local_sensitive_file
   to   = local_sensitive_file.sensitive_filee
 }
 

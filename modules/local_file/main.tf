@@ -12,7 +12,7 @@ resource "local_file" "file" {
 
 moved {
   from = local_sensitive_file.local_sensitive_file
-  to   = local_sensitive_file.sensitive_filee
+  to   = local_sensitive_file.sensitive_file
 }
 
 resource "local_sensitive_file" "sensitive_file" {
